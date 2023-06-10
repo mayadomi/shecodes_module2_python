@@ -48,6 +48,14 @@ while count <= number:
 # print("You got it right!")
 
 
+# while user_guess != correct_number:
+#     if user_guess < correct_number:
+#         print("Too low...") # can also ask here for input
+#     elif user_guess > correct_number:
+#         print("Too high....")
+#     user_guess = int(input("Make a guess "))
+
+
 # For Loops
 
 # Q1 Ask the user for a number. Use a for loop to 
@@ -62,11 +70,11 @@ while count <= number:
 # Q2 Ask the user for an integer. Using a for loop, add up every
 # number from 0 up to that integer, then print result
 
-# user_number = int(input("Enter a number: "))
-
-# for number in range(0, user_number+1):
-#     number = number + number
-# print(str(number))
+# max_number = int(input("Enter a number: "))
+# total = 0
+# for number in range(0, max_number+1):
+#     total += total + number
+# print(str(total))
 
 # Q3 Save a list of numbers to a variable in your script, then 
 # use a for loop to print sum of all numbers in list
