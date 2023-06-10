@@ -73,7 +73,7 @@ while count <= number:
 # max_number = int(input("Enter a number: "))
 # total = 0
 # for number in range(0, max_number+1):
-#     total += total + number
+#     total +=  number
 # print(str(total))
 
 # Q3 Save a list of numbers to a variable in your script, then 
