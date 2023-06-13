@@ -59,13 +59,19 @@
 
 import csv
 
-csv_filepath = "csvs/galaxies.csv"
+csv_filepath = "C:\she_codes\shecodes_python_module\Session_5\csvs\galaxies.csv"
 
 with open(csv_filepath, mode='r', encoding='utf-8') as galaxies:
-    reader = csv.reader(galaxies)
+    reader = csv.reader(galaxies,)
     galaxy_dict = {}
 
     for row in reader:
-        galaxy_dict[row[0]]
+        galaxy_dict[(row[0])] = int(row[1])
+    
+    print(f"Galaxy {min(galaxy_dict, key=galaxy_dict.get)} has the min velocity of {min(galaxy_dict.values())}km/sec" )
+    print(f"Galaxy {max(galaxy_dict, key=galaxy_dict.get)} has the min velocity of {max(galaxy_dict.values())}km/sec" )
 
+# Galaxy 1 has the min velocity of 9172km/sec.
+# Galaxy 82 has the max velocity of 34279km/sec.
 
+# Probably easier to use pandas :)
