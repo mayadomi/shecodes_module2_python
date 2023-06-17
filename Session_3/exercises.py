@@ -17,15 +17,15 @@
 # worry about negative numbers for now, unless
 # you really want a challenge.
 
-number = int(input("Enter a number: "))
-count = 0
-while count <= number:
+# number = int(input("Enter a number: "))
+# count = 0
+# while count <= number:
 
-    if (count % 2 != 0):
-        print(str(count))
-    elif count == 0:
-        print(str(count))
-    count = count + 1
+#     if (count % 2 != 0):
+#         print(str(count))
+#     elif count == 0:
+#         print(str(count))
+#     count = count + 1
 
 # Q3 - Guessing game
 # Select a number, and save it as variable in code.
@@ -80,11 +80,12 @@ while count <= number:
 # use a for loop to print sum of all numbers in list
 
 # my_numbers = [3,5,9,1]
-# my_numbers = [-3, -5, 9, 1]
-# my_numbers = []
+# # my_numbers = [-3, -5, 9, 1]
+# # my_numbers = []
+
 # sum = 0
 # for number in my_numbers:
-#     sum = sum + number
+#     sum += number # sum = sum + number
 # print(str(sum))
 
 # Q4 Mambo Code
@@ -99,10 +100,12 @@ while count <= number:
 
 # lyrics.append(["you", "makes me your man (ah!)"])
 
-# for lyric in lyrics:
+# for lyric in lyrics: # for name, text in lyrics:
 #     print(f"A little bit of {lyric[0]} {lyric[1]};")
 # print("*trumpet solo*")
 
+# for name, text in lyrics:
+#     print(f"A little bit of {name} {text};")
 #Extension Exercises
 
 # Q1 
@@ -124,35 +127,31 @@ while count <= number:
 # Select a number, and save it as variable in code.
 # Ask user to enter number and output whether it is 
 # greater or less than seledctec number. Keep asking
-# until correct number. Then print congrats.
+# # until correct number. Then print congrats.
 # import random
 
 # number_range = random.randrange(0,30,1)
 
 # correct_number = 12 
 
-# user_go = True
-# while user_go is True:
+# user_go = 'yes'
+
+# while user_go != 'no':
 #     print("Guess the random number! ")
-#     #user_guess = int(input("Make a guess "))
-    
+#     # user_guess = int(input("Make a guess "))
 #     user_guess = random.randrange(0,30,1) 
+#     print("Make a guess : " + str(user_guess))
 #     while user_guess != correct_number:
 #         if user_guess < correct_number:
-#             print("Make a guess : " + str(user_guess))
 #             print("Too low...")
-#             user_guess = random.randrange(0,30,1) 
-#             #user_guess = int(input("Make a guess "))
-#         elif user_guess > correct_number:
-#             print("Make a guess : " + str(user_guess))
+#         else:
 #             print("Too high....")
-#             #user_guess =  int(input("Make a guess "))
-#             user_guess = random.randrange(0,30,1)
-        
+#         # user_guess = int(input("Make a guess "))
+#         user_guess = random.randrange(0,30,1)
+#         print("Make a guess : " + str(user_guess))
+
 #     print("You got it right!")
-#     user_guess = input("If you would like to stop playing, type 'no'. Otherwise we'll play again: ")
-#     if user_guess == 'no':
-#         user_go = False
+#     user_go = input("If you would like to stop playing, type 'no'. Otherwise we'll play again: ")
 
 
 

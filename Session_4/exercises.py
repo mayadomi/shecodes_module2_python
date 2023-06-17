@@ -8,8 +8,9 @@
 
 
 # def get_integer(prompt):
-#     user_integer = input(prompt)
-#     return user_integer
+#     # user_integer = input(prompt)
+#     # return user_integer
+#       return input(prompt)
 
 # user_input =  get_integer(prompt)
 
@@ -20,11 +21,11 @@
 # number representing thetemperature in Farenheit as its argument, 
 # and returns a float representing thetemperature in Celcius
 
-# degrees_f = 350 # Assign some number as the value here
+# degrees_f = int(input("degrees please: ")) # Assign some number as the value here
 
 # # Define your function here
 # def celcius_convert(degrees_f):
-#     degrees_c = float((degrees_f - 32) * 5/9)
+#     degrees_c = float((degrees_f - 32) * 5/9) # could put this directly on return line 
 #     return degrees_c
 
 # print(celcius_convert(degrees_f))
@@ -45,16 +46,16 @@ def check_falsiness(my_arg):
 
 print(check_falsiness(my_arg))
 
-# Q4 
-# Write a function that takes two arguments; 
-# the unit price of an item, and how manyunits were 
-# purchased. Return the total cost as a string
+# # Q4 
+# # Write a function that takes two arguments; 
+# # the unit price of an item, and how manyunits were 
+# # purchased. Return the total cost as a string
 
-unit_price = 1.49
-unit_amount = 7
+# unit_price = 1.49
+# unit_amount = 7
 
-def calc_cost(unit_price, unit_amount):
-    cost = unit_price * unit_amount
-    return str(cost)
+# def calc_cost(unit_price, unit_amount):
+#     cost = unit_price * unit_amount
+#     return str(cost)
 
-print(f"The total cost is ${calc_cost(unit_price, unit_amount)}")
+# print(f"The total cost is ${calc_cost(unit_price, unit_amount)}")
